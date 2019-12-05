@@ -1,0 +1,102 @@
+@import "styles.css";
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "hd hd hd hd hd hd"
+    " . mn mn mn au ."
+    "ft ft ft ft ft ft";
+    grid-gap: 20px;
+}
+
+.content{
+    grid-area: mn;
+    line-height: 1.8;
+    padding-bottom: 120px;
+}
+
+.content-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.content-image{
+    max-width: 400px;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.content-image-caption{
+    color: #888;
+    font-size: 12px;
+    max-width: 400px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.breadcrumbs{
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.home{
+    text-decoration: none;
+    color: rgb(18, 86, 175);
+}
+
+.home:hover{
+    cursor: pointer;
+    color: rgb(18, 26, 100);
+}
+
+.author{
+    grid-area: au;
+}
+
+.name{
+    margin: 0 0 10px 0;
+}
+
+.author-content{
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.author-avatar{
+    width: 100%;
+
+}
+
+.single-quote{
+    font-style: italic;
+}
+
+.buy-button{
+    min-width: 80px;
+    height: 30px;
+}
+
+/* media queries */
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "hd hd hd hd hd hd"
+        " . mn mn mn mn ."
+        " . . au au . ."
+        "ft ft ft ft ft ft";
+        grid-gap: 20px;
+    }
+
+    .author-content{
+        padding: 0;
+    }
+}

@@ -3,18 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>Flos blog</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/single-post.css">
+        <link rel="stylesheet" href="css/post.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     </head>
 <body>
         <div class="container">
-                <div class="header">
+                <header class="header">
                     <div class="header-background"></div>
                     <h1>New Bonsai bought</h1>
                     <h2 class="subtitle">repotting, styling and wiring of raw material</h2>
-                </div>
-                <div class="content">
+                </header>
+                <article class="content">
                     <div class="breadcrumbs">
                         <a class="home" href="index.html">Blog</a> > New Bonsai bought
                     </div>
@@ -24,10 +23,10 @@
                     So i hopped in my car and drove to the nearest hardware store. In germany they usually have an area for plants and flowers in there.
                     I wandered throught their evergreens and deciduous trees and found an hinoki cypress. Luckily there were 20% off of
                     every plant that day. 
-                    <div class="content-image-container">
-                        <img class="content-image" src="img/bonsai2.jpg" alt="this is what i ended up with">
-                        <div class="content-image-caption">caption: this is what i ended up with</div>
-                    </div>
+                    <figure class="content-image-container">
+                            <img class="content-image" src="img/bonsai2.jpg" alt="this is what i ended up with">
+                            <figcaption class="content-image-caption">caption: this is what i ended up with</figcaption>
+                    </figure>
                     <h2>What to do to make this a beautiful bonsai?</h2>
                     Back home i removed the small branches that are growing directly out of the main trunk. A beautiful bonsai shows the trunk. 
                     Otherwise its only a bush. 
@@ -38,6 +37,9 @@
                     <br><br>
                     Now we have to wire the branches. Best way to do this is to wire always two branches together. Wrap the wire at a 45 degree angle around
                     the branch, starting at the main trunk.
+                    <br><br>
+                    <q class="single-quote">Always use the two branch principal!</q>
+                    <br>
                     <h2>How do you show more of the trunk?</h2>
                     Raw material is usually planted very deep in the pot. Removed the plant from the pot and scratch away the top of the soil.
                     Maybe you'll find a larger trunk or beautiful looking surface roots.
@@ -46,19 +48,28 @@
                     <div class="content-image-container">
                             <img class="content-image" src="img/bonsai1.jpg" alt="the result">
                             <div class="content-image-caption">caption: the result</div>
-                        </div>
-                </div>
-                <div class="author">
+                    </div>
+
+                    <br>
+                    If you want to buy a bonsai instead of doing you own, press the button!
+                    <br>
+                    <button type="button" class="buy-button">Buy a bonsai</button>
+                </article>
+                <aside class="author">
                     <div class="author-content">
+                            <img src="img/flo.jpg" alt="Florian Liesenfeld" class="author-avatar"></img>
                             <h3 class="name">Florian Liesenfeld</h3>
                             <div class="author-description">
-                                I'm a student at the university of udacity.
+                                I'm a 29 year old student at the university of udacity. 
                             </div>
                     </div>
-                </div>
-                <div class="footer">
-    
-                </div>
+                </aside>
+                <footer class="footer">
+                        <ul class="footer-list">
+                                <li class="footer-item">Imprint</li>
+                                <li class="footer-item">Contact</li>
+                            </ul>
+                </footer>
             </div>
 </body>
 </html>

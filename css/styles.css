@@ -35,6 +35,18 @@ body {
     grid-area: ft;
     background-color: #333;
     height: 300px;
+    display: flex;
+    justify-content: center;
 }
+
+.footer-item{
+    color: white;
+    padding-bottom: 10px;
+}
+.footer-item:hover{
+    color: #888;
+    cursor: pointer;
+}
+
 
 
